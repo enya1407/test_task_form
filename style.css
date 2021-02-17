@@ -1,0 +1,83 @@
+* {
+  font-size: 12px;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 504px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(183, 183, 183, 0.32);
+  border-radius: 4px;
+}
+
+.form {
+  padding: 32px;
+}
+
+.hidden {
+  display: none;
+}
+
+.form .btn {
+  width: 184px;
+  font-size: 14px;
+}
+
+.btn-group {
+  width: 100%;
+  border-bottom: #eff2f7 1px solid;
+}
+
+.btn-group .btn {
+  padding: 11px;
+  width: 50%;
+  font-size: 14px;
+}
+
+.submit {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.btn.btn-inactive {
+  background-color: #eff2f7;
+}
+
+#loginForm,
+#registrationForm {
+  position: relative;
+}
+.password-control {
+  position: absolute;
+  left: 448px;
+}
+.password-login-control {
+  top: 130px;
+}
+.registration1-control {
+  top: 195px;
+}
+.registration2-control {
+  top: 265px;
+}
+
+.forgot-password {
+  margin-bottom: 20px;
+}
+.form .form-control {
+  padding: 15px;
+}
+#registrationLocation {
+  padding: 0 0 0 10px;
+  height: 32px;
+}
+
+.form .invalid {
+  border: red 1px solid;
+}
