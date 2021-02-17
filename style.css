@@ -1,6 +1,17 @@
 * {
   font-size: 12px;
 }
+
+.btn:focus {
+  box-shadow: none !important;
+}
+.btn-primary {
+  background-color: #00b9ff !important;
+  border-color: #00b9ff !important;
+}
+a {
+  color: #00b9ff !important;
+}
 .container {
   display: flex;
   min-height: 100vh;
@@ -55,14 +66,17 @@
 }
 .password-control {
   position: absolute;
-  left: 448px;
+  right: 40px;
 }
+
 .password-login-control {
   top: 130px;
 }
+
 .registration1-control {
   top: 195px;
 }
+
 .registration2-control {
   top: 265px;
 }
@@ -70,14 +84,54 @@
 .forgot-password {
   margin-bottom: 20px;
 }
+
 .form .form-control {
   padding: 15px;
 }
+
 #registrationLocation {
   padding: 0 0 0 10px;
   height: 32px;
 }
 
 .form .invalid {
-  border: red 1px solid;
+  border: #f96d63 1px solid;
+}
+
+.message {
+  width: 140px;
+  height: 24px;
+  background-color: #f96d63;
+  position: absolute;
+  right: 38px;
+  top: 59px;
+  color: white;
+  font-style: italic;
+}
+
+.message::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-right: 14px solid #f96d63;
+  border-bottom: 12px solid transparent;
+  position: absolute;
+  right: 140px;
+}
+#loginPasswordError {
+  right: 58px;
+  top: 128px;
+}
+
+#registrationPhoneError {
+  top: 128px;
+}
+#registrationPassword1Error {
+  right: 58px;
+  top: 196px;
+}
+#registrationPassword2Error {
+  right: 58px;
+  top: 264px;
 }
